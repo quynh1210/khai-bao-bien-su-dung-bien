@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhap diem sinh vien</title>
+</head>
+<body>
+<script>
+    let inputScoreChemistry;
+    let inputScorePhysical;
+    let inputScoreBiology;
+    inputScoreChemistry = prompt("Enter the score chemistry");
+    inputScorePhysical = prompt("Enter the score Physical");
+    inputScoreBiology = prompt("Enter the score biology");
+    let Chemistry = parseInt(inputScoreChemistry);
+    let Physical = parseInt(inputScorePhysical);
+    let Biology = parseInt(inputScoreBiology);
+    let GPA = (Chemistry + Physical + Biology)/3;
+    let sum = Chemistry + Physical + Biology;
+    document.write("GPA is: " + GPA);
+    document.write("sum is: " + sum);
+</script>
+</body>
+</html>
