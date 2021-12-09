@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h3>Máy tính bỏ túi</h3>
+<input id="firstOperand" placeholder="số thứ nhất" type="text">
+<input id="secondOperand" placeholder="số thứ hai" type="text">
+<br>
+<button onclick="add()">Phép cộng (+)</button>
+<button onclick="sub()">Phép trừ (-)</button>
+<button onclick="mul()">Phép nhân (*)</button>
+<button onclick="div()">Phép chia (/)</button>
+<div id="result"></div>
+<script>
+    function add() {
+        let firstOperand = parseInt(document.getElementById("firstOperand").value);
+        let secondOperand = parseInt(document.getElementById("secondOperand").value);
+        let result = firstOperand + secondOperand;
+        document.getElementById("result").innerHTML = "<h3>Kết quả: " + result + "</h3>"
+    }
+
+    function sub() {
+        let firstOperand = document.getElementById("firstOperand").value;
+        let secondOperand = document.getElementById("secondOperand").value;
+        let result = firstOperand - secondOperand;
+        document.getElementById("result").innerHTML = "<h3>Kết quả: " + result + "</h3>"
+    }
+
+    function mul() {
+        let firstOperand = document.getElementById("firstOperand").value;
+        let secondOperand = document.getElementById("secondOperand").value;
+        let result = firstOperand * secondOperand;
+        document.write("<h3>Kết quả: " + result + "</h3>")
+    }
+
+    function div() {
+        let firstOperand = document.getElementById("firstOperand").value;
+        let secondOperand = document.getElementById("secondOperand").value;
+        let result = firstOperand / secondOperand;
+        document.write("<h3>Kết quả: " + result + "</h3>")
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
+
+</body>
+</html>
