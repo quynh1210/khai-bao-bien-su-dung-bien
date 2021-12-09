@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhap diem sinh vien</title>
+</head>
+<body>
+<script>
+    let inputScoreChemistry;
+    let inputScorePhysical;
+    let inputScoreBiology;
+    inputScoreChemistry = prompt("nhập điểm môn hóa học");
+    inputScorePhysical = prompt("nhập điêm môn vật lý");
+    inputScoreBiology = prompt("nhập điểm môn sinh học");
+    let Chemistry = parseInt(inputScoreChemistry);
+    let Physical = parseInt(inputScorePhysical);
+    let Biology = parseInt(inputScoreBiology);
+    let GPA = (Chemistry + Physical + Biology)/3;
+    let sum = Chemistry + Physical + Biology;
+    document.write("điểm trung bình là: " + GPA.toFixed(2));
+    document.write("điểm tổng là: " + sum);
+</script>
+</body>
+</html>
